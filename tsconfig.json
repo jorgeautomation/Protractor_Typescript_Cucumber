@@ -1,0 +1,22 @@
+{
+  "compilerOptions": {
+    "target": "esnext",
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "sourceMap": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "removeComments": false,
+    "noStrictGenericChecks": true,
+    "noImplicitAny": false,
+    "suppressImplicitAnyIndexErrors": true,
+    "typeRoots": [
+      "./node_modules/@types/"
+    ]
+  },
+  "compileOnSave": true,
+  "exclude": [
+    "node_modules/*",
+    "**/*-aot.ts"
+  ]
+}

@@ -1,4 +1,4 @@
-//from protractor
+//from protractor   
 import { browser, element, by, $$, $ } from "protractor";
 import { BasePage, IdentificationType } from "./BasePage";
 

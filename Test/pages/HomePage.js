@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-//from protractor
+//from protractor   
 const protractor_1 = require("protractor");
 const BasePage_1 = require("./BasePage");
 // const using json format, this is like page factory in Java, applying same concept

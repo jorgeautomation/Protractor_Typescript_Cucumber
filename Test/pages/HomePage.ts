@@ -41,20 +41,21 @@ export class HomePage extends BasePage{
 
     
     //Open browser
-    openBrowser(url: string){
-        browser.get(url);
+    async openBrowser(url: string){
+        //this await works because get returns promise.Promise. hover over get to see it
+       await browser.get(url);
     }
 
     //Get all headings
-    getAllHeadings(){
-        this.headings.getText().then((text)=>{
+    async getAllHeadings(){
+        await this.headings.getText().then((text)=>{
             console.log("The heading is: " + text)
         });
     }
 
     //Click first heading
-    clickFirstHeading(){
-        this.heading.click();
+    async clickFirstHeading(){
+        await this.heading.click();
     }
 
 }

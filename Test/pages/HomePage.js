@@ -33,18 +33,19 @@ class HomePage extends BasePage_1.BasePage {
         this.headings = this.elementLocator(Locators.headings);
     }
     //Open browser
-    openBrowser(url) {
-        protractor_1.browser.get(url);
+    async openBrowser(url) {
+        //this await works because get returns promise.Promise. hover over get to see it
+        await protractor_1.browser.get(url);
     }
     //Get all headings
-    getAllHeadings() {
-        this.headings.getText().then((text) => {
+    async getAllHeadings() {
+        await this.headings.getText().then((text) => {
             console.log("The heading is: " + text);
         });
     }
     //Click first heading
-    clickFirstHeading() {
-        this.heading.click();
+    async clickFirstHeading() {
+        await this.heading.click();
     }
 }
 exports.HomePage = HomePage;

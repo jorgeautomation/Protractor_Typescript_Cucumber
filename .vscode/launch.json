@@ -1,0 +1,15 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "Debug Protractor Framework",
+            "program": "${workspaceRoot}/node_modules/protractor/bin/protractor",
+            "stopOnEntry": false,
+            "args": ["${workspaceRoot}/Test/conf.js"],
+            "outFiles": ["${workspaceRoot}/out/**/*.js"]
+        }
+    ],
+    "compounds": []
+}

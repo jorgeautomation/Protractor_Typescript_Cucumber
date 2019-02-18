@@ -5,9 +5,10 @@
             "type": "node",
             "request": "launch",
             "name": "Debug Protractor Framework",
+            "cwd": "${workspaceRoot}",
             "program": "${workspaceRoot}/node_modules/protractor/bin/protractor",
             "stopOnEntry": false,
-            "args": ["${workspaceRoot}/Test/conf.js"],
+            "args": ["${workspaceRoot}/Test/steps/config.js"],
             "outFiles": ["${workspaceRoot}/out/**/*.js"]
         }
     ],

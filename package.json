@@ -36,12 +36,19 @@
     "zone.js": "~0.6.26"
   },
   "devDependencies": {
+    "@types/chai": "^4.1.7",
     "@types/core-js": "~0.9.34",
+    "@types/cucumber": "^4.0.5",
     "@types/jasmine": "^3.3.8",
     "@types/node": "~6.0.46",
+    "chai": "^4.2.0",
+    "chai-as-promised": "^7.1.1",
     "concurrently": "2.2.0",
+    "cucumber": "^5.1.0",
     "jasmine": "^3.3.1",
     "protractor": "^5.4.2",
+    "protractor-cucumber-framework": "^6.1.1",
+    "ts-node": "^8.0.2",
     "typescript": "^3.3.3"
   },
   "repository": {}

@@ -10,7 +10,7 @@ describe("Going to write first test", () => {
         //Get headings 
         await homePage.getAllHeadings();
         //Click on heading
-        await homePage.clickFirstHeading();
+        //await homePage.clickFirstHeading();
     });
     it("should not pass as the values are undefined", () => {
     });

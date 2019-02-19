@@ -3,5 +3,9 @@
         "**/*.js": true,
         "**/*.js.map": true,
         "**/.DS_Store": true
-    }
+    },
+    "cucumberautocomplete.steps": ["Test/steps/*.ts",],
+    "cucumberautocomplete.syncfeatures": "Test/features/*feature",
+    "cucumberautocomplete.strictGherkinCompletion": true
 }
+

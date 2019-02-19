@@ -44,7 +44,8 @@ class HomePage extends BasePage_1.BasePage {
         });
     }
     //Click first heading
-    async clickFirstHeading() {
+    async clickFirstHeading(heading) {
+        console.log("Can I print the input value from stepdefinition, if yes, this is it: ", heading);
         await this.heading.click();
     }
 }

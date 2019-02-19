@@ -17,7 +17,7 @@ describe("Going to write first test", ()=> {
         await homePage.getAllHeadings(); 
 
         //Click on heading
-        await homePage.clickFirstHeading();
+        //await homePage.clickFirstHeading();
 
     });
 

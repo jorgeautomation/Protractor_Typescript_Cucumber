@@ -1,4 +1,4 @@
-import {defineSupportCode, Given, When, Then} from 'cucumber'
+import {Given, When, Then} from 'cucumber'
 import { HomePage } from '../pages/HomePage';
 import {expect} from 'chai';
 import { CourseDetailsPage } from '../pages/CourseDetails';

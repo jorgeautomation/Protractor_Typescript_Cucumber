@@ -15,7 +15,7 @@ export let config: Config = {
         compiler: "ts:ts-node/register",
         strict: true,
         format: [],
-        require: ['../steps/*.js'],
+        require: ['../steps/*.js', '../hooks/*.js'],
         tags: '@smoke'
   }
 

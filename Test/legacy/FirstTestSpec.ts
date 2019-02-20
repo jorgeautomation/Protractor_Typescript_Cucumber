@@ -1,6 +1,6 @@
 //from protractor
 import { browser, element, by, $$ } from "protractor";
-import { HomePage } from "./pages/HomePage";
+import { HomePage } from "../pages/HomePage";
 
 
 describe("Going to write first test", ()=> {

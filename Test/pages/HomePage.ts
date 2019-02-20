@@ -1,7 +1,8 @@
 //from protractor   
 import { browser, element, by, $$, $ } from "protractor";
 import { BasePage, IdentificationType } from "./BasePage";  
-// const using json format, this is like page factory in Java, applying same concept
+
+// this is object declaration, in this case a constant object
 const Locators = {
     heading : {
         type:IdentificationType[IdentificationType.Xpath],

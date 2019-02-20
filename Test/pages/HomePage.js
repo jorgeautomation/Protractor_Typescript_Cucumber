@@ -3,7 +3,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 //from protractor   
 const protractor_1 = require("protractor");
 const BasePage_1 = require("./BasePage");
-// const using json format, this is like page factory in Java, applying same concept
+// this is object declaration, in this case a constant object
 const Locators = {
     heading: {
         type: BasePage_1.IdentificationType[BasePage_1.IdentificationType.Xpath],

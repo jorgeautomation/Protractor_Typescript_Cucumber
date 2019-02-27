@@ -7,13 +7,17 @@ exports.config = {
     framework: 'custom',
     frameworkPath: require.resolve('protractor-cucumber-framework'),
     baseUrl: "http://localhost:8808/",
+    suites: {
+        "homepage": "../features/Home.feature",
+        "coursedetails": "../features/CourseDetails.feature"
+    },
     cucumberOpts: {
         compiler: "ts:ts-node/register",
         strict: true,
         //format: [],
         format: "json:./reports/json/cucumber_report.json",
         require: ['../steps/*.js', '../hooks/*.js'],
-        tags: '@smoke'
+        tags: '@smoke or @regression'
     },
     onComplete: () => {
         CucumberReportExtension_1.CucumberReportExtension.GenerateCucumberReport();

@@ -24,4 +24,12 @@ cucumber_1.Then(/^I click the '([^\"]*)' course$/, async (headingText) => {
 cucumber_1.Then(/^I should see '([^\"]*)' course in course details page$/, async (course) => {
     chai_1.expect(courseDetails.gerCourseHeading).to.be.not.null;
 });
+cucumber_1.Then(/^I should see all course information in coursedetails page$/, async (table) => {
+    let localTable = [['Selenium', '2'], ['Python', '3']];
+    await table.rows().forEach(element => {
+        console.log(element);
+    });
+    //this is from chai, it compares all the values in both tables
+    chai_1.assert.deepEqual(localTable, table.rows(), "The data source does not matches with the step definition table");
+});
 //# sourceMappingURL=HomeSteps.js.map

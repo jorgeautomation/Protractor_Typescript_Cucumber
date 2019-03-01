@@ -11,8 +11,7 @@ const Locators = {
     },
     headings: {
         type: BasePage_1.IdentificationType[BasePage_1.IdentificationType.Css],
-        //adding h222 instead of h2 to intentionally failed and see screenshot
-        value: ".well.hoverwell.thumbnail>h222"
+        value: ".well.hoverwell.thumbnail>h2"
     }
 };
 //export is to say this class is available for other classes

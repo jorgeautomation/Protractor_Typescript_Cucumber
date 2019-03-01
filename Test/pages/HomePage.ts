@@ -11,8 +11,7 @@ const Locators = {
 
     headings : {
         type:IdentificationType[IdentificationType.Css],
-        //adding h222 instead of h2 to intentionally failed and see screenshot
-        value: ".well.hoverwell.thumbnail>h222"
+        value: ".well.hoverwell.thumbnail>h2"
     }
 
 }

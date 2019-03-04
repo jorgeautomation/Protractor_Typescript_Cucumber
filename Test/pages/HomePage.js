@@ -3,6 +3,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 //from protractor   
 const protractor_1 = require("protractor");
 const BasePage_1 = require("./BasePage");
+const json = require("load-json-file");
 // this is object declaration, in this case a constant object
 const Locators = {
     heading: {
@@ -12,6 +13,10 @@ const Locators = {
     headings: {
         type: BasePage_1.IdentificationType[BasePage_1.IdentificationType.Css],
         value: ".well.hoverwell.thumbnail>h2"
+    },
+    searchText: {
+        type: BasePage_1.IdentificationType[BasePage_1.IdentificationType.Css],
+        value: "[class='form-control']"
     }
 };
 //export is to say this class is available for other classes
@@ -31,6 +36,7 @@ class HomePage extends BasePage_1.BasePage {
         //Using inheritance for BasePage, and the the second part is locating element without using inheritance
         this.heading = this.elementLocator(Locators.headings).element(protractor_1.by.xpath("//span[contains(text(),'4th')]"));
         this.headings = this.elementLocator(Locators.headings);
+        this.searchText = this.elementLocator(Locators.searchText);
     }
     //Open browser
     async openBrowser(url) {
@@ -47,6 +53,13 @@ class HomePage extends BasePage_1.BasePage {
     async clickFirstHeading(heading) {
         console.log("Can I print the input value from stepdefinition, if yes, this is it: ", heading);
         await this.heading.click();
+    }
+    async EnterDataInSearchFromJson() {
+        json.default("./data.json").then((x) => {
+            console.log(x);
+            //casting what is in the parenthesis, so we request the key and it should return the value
+            this.searchText.sendKeys(x.SearchValue);
+        });
     }
 }
 exports.HomePage = HomePage;

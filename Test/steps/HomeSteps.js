@@ -32,4 +32,7 @@ cucumber_1.Then(/^I should see all course information in coursedetails page$/, a
     //this is from chai, it compares all the values in both tables
     chai_1.assert.deepEqual(localTable, table.rows(), "The data source does not matches with the step definition table");
 });
+cucumber_1.When(/^I enter text in search from external data source$/, async () => {
+    await homePage.EnterDataInSearchFromJson();
+});
 //# sourceMappingURL=HomeSteps.js.map

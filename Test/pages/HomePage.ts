@@ -1,6 +1,7 @@
 //from protractor   
 import { browser, element, by, $$, $ } from "protractor";
 import { BasePage, IdentificationType } from "./BasePage";  
+import * as json from 'load-json-file'
 
 // this is object declaration, in this case a constant object
 const Locators = {
@@ -12,6 +13,11 @@ const Locators = {
     headings : {
         type:IdentificationType[IdentificationType.Css],
         value: ".well.hoverwell.thumbnail>h2"
+    },
+
+    searchText : {
+        type:IdentificationType[IdentificationType.Css],
+        value: "[class='form-control']"
     }
 
 }
@@ -40,6 +46,8 @@ export class HomePage extends BasePage{
 
     headings = this.elementLocator(Locators.headings);
 
+    searchText= this.elementLocator(Locators.searchText);
+
     
     //Open browser
     async openBrowser(url: string){
@@ -58,6 +66,14 @@ export class HomePage extends BasePage{
     async clickFirstHeading(heading: string){
         console.log("Can I print the input value from stepdefinition, if yes, this is it: ", heading)
         await this.heading.click();
+    }
+
+    async EnterDataInSearchFromJson(){
+        json.default("./data.json").then((x) => {
+            console.log(x);
+            //casting what is in the parenthesis, so we request the key and it should return the value
+            this.searchText.sendKeys((<any>x).SearchValue);
+        });
     }
 
 }

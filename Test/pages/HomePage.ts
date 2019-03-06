@@ -1,7 +1,8 @@
 //from protractor   
 import { browser, element, by, $$, $ } from "protractor";
 import { BasePage, IdentificationType } from "./BasePage";  
-import * as json from 'load-json-file'
+import * as json from 'load-json-file';
+import {ExcelUtil} from '../utilities/ExcelUtil';
 
 // this is object declaration, in this case a constant object
 const Locators = {
@@ -75,5 +76,27 @@ export class HomePage extends BasePage{
             this.searchText.sendKeys((<any>x).SearchValue);
         });
     }
+
+    async EnterDataInSearchFromExcel(){
+        //this way you can get the value
+        //let sheet = ExcelUtil.ReadExcelSheet("./data.xlsx");
+        //console.log((<any>sheet).SearchValue);
+
+        //this will bring with an specific strong type
+        //the atributes appearing when you hit sheet. are appering for the cast of the 
+        //interface
+        let sheet = <SearchData> ExcelUtil.ReadExcelSheet("./data.xlsx");
+        console.log(sheet.SearchValue);
+
+        //enter value in text box
+        this.searchText.sendKeys(sheet.SearchValue);
+    }
+
+}
+
+interface SearchData{
+    SearchValue: string,
+    CourseTitle: string, 
+    Durations: string;
 
 }

@@ -29,7 +29,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1773000000
+              "duration": 1814000000
             }
           },
           {
@@ -42,7 +42,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1428000000
+              "duration": 1420000000
             }
           },
           {
@@ -55,7 +55,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1000000
+              "duration": 27000000
             }
           },
           {
@@ -68,7 +68,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 50000000
+              "duration": 136000000
             }
           },
           {
@@ -78,7 +78,8 @@
               "location": "..\\hooks\\ScenarioHook.ts:26"
             },
             "result": {
-              "status": "passed"
+              "status": "passed",
+              "duration": 1000000
             }
           },
           {

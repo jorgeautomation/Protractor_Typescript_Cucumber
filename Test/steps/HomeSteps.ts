@@ -43,7 +43,8 @@ Then(/^I should see all course information in coursedetails page$/, async(table:
  });
 
  When(/^I enter text in search from external data source$/, async() => {
-    await homePage.EnterDataInSearchFromJson();
+    //await homePage.EnterDataInSearchFromJson();
+    await homePage.EnterDataInSearchFromExcel();
     
  });
  

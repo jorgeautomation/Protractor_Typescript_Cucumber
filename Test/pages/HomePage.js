@@ -4,6 +4,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 const protractor_1 = require("protractor");
 const BasePage_1 = require("./BasePage");
 const json = require("load-json-file");
+const ExcelUtil_1 = require("../utilities/ExcelUtil");
 // this is object declaration, in this case a constant object
 const Locators = {
     heading: {
@@ -60,6 +61,18 @@ class HomePage extends BasePage_1.BasePage {
             //casting what is in the parenthesis, so we request the key and it should return the value
             this.searchText.sendKeys(x.SearchValue);
         });
+    }
+    async EnterDataInSearchFromExcel() {
+        //this way you can get the value
+        //let sheet = ExcelUtil.ReadExcelSheet("./data.xlsx");
+        //console.log((<any>sheet).SearchValue);
+        //this will bring with an specific strong type
+        //the atributes appearing when you hit sheet. are appering for the cast of the 
+        //interface
+        let sheet = ExcelUtil_1.ExcelUtil.ReadExcelSheet("./data.xlsx");
+        console.log(sheet.SearchValue);
+        //enter value in text box
+        this.searchText.sendKeys(sheet.SearchValue);
     }
 }
 exports.HomePage = HomePage;

@@ -12,6 +12,19 @@ export let config: Config = {
 
     baseUrl: "http://localhost:8808/",
 
+    //for running specific browser
+    // capabilities:{
+    //   "browserName":"firefox"
+    // },
+
+    //for parallel testing, it is an array
+    multiCapabilities:[{
+      "browserName":"firefox"
+    },
+    {
+      "browserName":"chrome"
+    }],
+
     suites: {
       "homepage": "../features/Home.feature",
       "coursedetails": "../features/CourseDetails.feature"

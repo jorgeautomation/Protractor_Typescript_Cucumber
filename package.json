@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "scripts": {
     "start": "concurrently \"npm run tsc:w\" \"npm run server\" ",
+    "stop": "node server.stop.js",
     "server": "node node_modules/ng2f-server/server.js",
     "tsc": "tsc",
     "tsc:w": "tsc -w"

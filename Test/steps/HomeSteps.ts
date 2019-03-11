@@ -31,7 +31,7 @@ Then(/^I should see '([^\"]*)' course in course details page$/, async(course) =>
 
 Then(/^I should see all course information in coursedetails page$/, async(table: TableDefinition) => {
 
-    let localTable = [[ 'Selenium', '2' ],[ 'Python', '3' ]]
+    let localTable = [[ 'Selenium', '2' ],[ 'Java', '3' ]]
 
     await table.rows().forEach(element => {
         console.log(element);

@@ -4,7 +4,8 @@ import {Config} from 'protractor';
 import { CucumberReportExtension } from '../reporting/CucumberReportExtension';
 
 export let config: Config = {
-    seleniumAddress: 'http://localhost:4444/wd/hub',
+    //seleniumAddress: 'http://localhost:4444/wd/hub', //no need to specify this
+    directConnect:true, //if there is a selenium jar it will bypass it
     specs: [ '../features/*.feature' ],
 
     framework: 'custom',

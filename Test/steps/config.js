@@ -2,7 +2,8 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 const CucumberReportExtension_1 = require("../reporting/CucumberReportExtension");
 exports.config = {
-    seleniumAddress: 'http://localhost:4444/wd/hub',
+    //seleniumAddress: 'http://localhost:4444/wd/hub', //no need to specify this
+    directConnect: true,
     specs: ['../features/*.feature'],
     framework: 'custom',
     frameworkPath: require.resolve('protractor-cucumber-framework'),

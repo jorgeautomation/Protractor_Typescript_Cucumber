@@ -25,7 +25,7 @@ cucumber_1.Then(/^I should see '([^\"]*)' course in course details page$/, async
     chai_1.expect(courseDetails.gerCourseHeading).to.be.not.null;
 });
 cucumber_1.Then(/^I should see all course information in coursedetails page$/, async (table) => {
-    let localTable = [['Selenium', '2'], ['Python', '3']];
+    let localTable = [['Selenium', '2'], ['Java', '3']];
     await table.rows().forEach(element => {
         console.log(element);
     });

@@ -69,7 +69,8 @@ class HomePage extends BasePage_1.BasePage {
         //this will bring with an specific strong type
         //the atributes appearing when you hit sheet. are appering for the cast of the 
         //interface
-        let sheet = ExcelUtil_1.ExcelUtil.ReadExcelSheet("../steps/data.xlsx");
+        let dir = process.cwd() + "/data.xlsx";
+        let sheet = ExcelUtil_1.ExcelUtil.ReadExcelSheet(dir);
         console.log(sheet.SearchValue);
         //enter value in text box
         this.searchText.sendKeys(sheet.SearchValue);

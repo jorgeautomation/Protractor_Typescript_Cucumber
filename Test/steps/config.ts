@@ -13,17 +13,18 @@ export let config: Config = {
     baseUrl: "http://localhost:8808/",
 
     //for running specific browser
-    // capabilities:{
-    //   "browserName":"firefox"
-    // },
-
-    //for parallel testing, it is an array
-    multiCapabilities:[{
+    capabilities:{
       "browserName":"firefox"
     },
-    {
-      "browserName":"chrome"
-    }],
+
+    //for parallel testing, it is an array
+    //cucumber_json.json is not being updated when working parallel
+    // multiCapabilities:[{
+    //   "browserName":"firefox"
+    // },
+    // {
+    //   "browserName":"chrome"
+    // }],
 
     suites: {
       "homepage": "../features/Home.feature",

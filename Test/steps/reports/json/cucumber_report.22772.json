@@ -29,7 +29,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 2123000000
+              "duration": 2211000000
             }
           },
           {
@@ -42,7 +42,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 34000000
+              "duration": 41000000
             }
           },
           {
@@ -55,7 +55,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 267000000
+              "duration": 275000000
             }
           },
           {
@@ -76,7 +76,8 @@
               "location": "..\\..\\node_modules\\protractor-cucumber-framework\\lib\\resultsCapturer.js:26"
             },
             "result": {
-              "status": "passed"
+              "status": "passed",
+              "duration": 1000000
             }
           }
         ]
@@ -113,7 +114,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1082000000
+              "duration": 1074000000
             }
           },
           {
@@ -126,7 +127,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 29000000
+              "duration": 34000000
             }
           },
           {
@@ -139,7 +140,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 259000000
+              "duration": 254000000
             }
           },
           {
@@ -198,8 +199,7 @@
               "location": "..\\hooks\\ScenarioHook.ts:26"
             },
             "result": {
-              "status": "passed",
-              "duration": 1000000
+              "status": "passed"
             }
           },
           {
@@ -209,7 +209,8 @@
               "location": "..\\..\\node_modules\\protractor-cucumber-framework\\lib\\resultsCapturer.js:26"
             },
             "result": {
-              "status": "passed"
+              "status": "passed",
+              "duration": 1000000
             }
           }
         ]
@@ -235,7 +236,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1076000000
+              "duration": 1072000000
             }
           },
           {
@@ -248,7 +249,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 26000000
+              "duration": 24000000
             }
           },
           {
@@ -261,7 +262,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 256000000
+              "duration": 254000000
             }
           },
           {
@@ -273,8 +274,7 @@
               "location": "HomeSteps.ts:28"
             },
             "result": {
-              "status": "passed",
-              "duration": 1000000
+              "status": "passed"
             }
           },
           {
@@ -284,8 +284,7 @@
               "location": "..\\hooks\\ScenarioHook.ts:26"
             },
             "result": {
-              "status": "passed",
-              "duration": 1000000
+              "status": "passed"
             }
           },
           {
@@ -321,7 +320,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1063000000
+              "duration": 1072000000
             }
           },
           {
@@ -334,7 +333,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1063000000
+              "duration": 1171000000
             }
           },
           {
@@ -347,7 +346,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 22000000
+              "duration": 42000000
             }
           },
           {
@@ -360,7 +359,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 60000000
+              "duration": 91000000
             }
           },
           {

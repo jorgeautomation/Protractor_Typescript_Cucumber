@@ -8,16 +8,17 @@ exports.config = {
     frameworkPath: require.resolve('protractor-cucumber-framework'),
     baseUrl: "http://localhost:8808/",
     //for running specific browser
-    // capabilities:{
+    capabilities: {
+        "browserName": "firefox"
+    },
+    //for parallel testing, it is an array
+    //cucumber_json.json is not being updated when working parallel
+    // multiCapabilities:[{
     //   "browserName":"firefox"
     // },
-    //for parallel testing, it is an array
-    multiCapabilities: [{
-            "browserName": "firefox"
-        },
-        {
-            "browserName": "chrome"
-        }],
+    // {
+    //   "browserName":"chrome"
+    // }],
     suites: {
         "homepage": "../features/Home.feature",
         "coursedetails": "../features/CourseDetails.feature"
